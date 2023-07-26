@@ -1,13 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 body {
     height: 100vh;
+    font-family: 'Roboto';
     margin: 0px;
     display: flex;
     flex-direction: column;
 }
 
+.header, .footer {
+    padding: 0px 250px;
+}
+
 .header, .footer, .content {
     display: flex;
-    padding: 0px 250px;
+}
+
+.header, .hero, .footer {
+    background-color: #1F2937
 }
 
 .header {
@@ -15,8 +24,14 @@ body {
     align-items: center;
 }
 
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
 ul {
     display: flex;
+    color: white;
     gap: 16px;
     list-style: none;
 }
@@ -26,20 +41,127 @@ ul {
     flex: 1;
 }
 
-.hero, .random, .random2 {
+.hero, .random, .quote, .call-to-action {
     flex: 1;
+    display: flex;
+    padding: 0px 250px;
+}
+
+.hero-container {
+    padding: 100px 0px;
     display: flex;
 }
 
-.hero {
-    
+.hero-main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
 }
 
-img {
-    max-width: 400px;
+.hero-secondary-text {
+    font-size: 18px;
+    font-weight: 200;
+    color: #E5E7EB;
+    margin-bottom: 8px;
 }
 
-div {
-    border-color: red;
-    border-style: dotted;
+button {
+    border-radius: 5px;
+    border-width: 0px;
+    color: white;
+    font-weight: 700;
+    padding: 8px 24px;
+    background-color: #3882F6;
+}
+
+.hero button {
+    background-color: #3882F6;
+}
+
+.hero img {
+    max-width: 500px;
+    max-height: 250px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quote-content {
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-weight: bold;
+    padding-right: 32px;
+    font-size: 24px;
+}
+
+.history-header {
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.history {
+    padding: 50px 0px;
+}
+
+.history-content {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.history-item {
+    width: 250px;
+    height: 250px;
+}
+
+.history-content img {
+    height: 150px;
+    width: 250px;
+}
+
+.call-to-action-content {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    margin: 50px;
+    padding: 50px;
+}
+
+.call-to-action button {
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.call-to-action-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.call-to-action-text {
+    font-weight: 300;
+}
+
+.footer {
+    justify-content: center;
+    color:#F9FAF8;
+    padding: 50px;
 }
