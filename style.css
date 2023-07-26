@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer, .content {
+    display: flex;
+    padding: 0px 250px;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+.content {
+    flex-direction: column;
+    flex: 1;
+}
+
+.hero, .random, .random2 {
+    flex: 1;
+    display: flex;
+}
+
+.hero {
+    
+}
+
+img {
+    max-width: 400px;
+}
+
+div {
+    border-color: red;
+    border-style: dotted;
+}
